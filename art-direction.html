@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images with the image-set() CSS function</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+        text-align: center;
+      }
+      figure {
+        max-width: 1440px;
+        margin-bottom: 40px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .fixed {
+        max-height: 400px;
+        object-fit: cover;
+      }
+      .fixed2 {
+        height: 700px;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Responsive images with the image-set() CSS function</h1>
+    <h2>Art Direction</h2>
+    <figure>
+      <img class="fixed" src="./img/ok-image.jpg" alt="pine trees" />
+      <figcaption
+        >This image has a fixed height of 400px with the width taking the full
+        width of the screen but having a maximum width of 1400px. It doesn't
+        have any specific detail that it is showing to the user, hence looks
+        good on any screen size and because the image has been set to adjust
+        itself to cover any space it finds itself in, it doesn't look stretched
+        on any screen size.</figcaption
+      >
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@brookecagle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Brooke Cagle</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </figure>
+
+    <figure>
+      <img
+        class="fixed2"
+        src="./img/landscape-view.jpg"
+        alt="landscape view of a woman standing in front of a multi-colored wall"
+      />
+      <figcaption
+        >This image has a fixed height of 700px with the width taking the full
+        width of the screen but having a maximum width of 1400px. Its main focus
+        or detail to the user is the lady. Its orientation is landscaped. This
+        image also adjusts itself to cover any space it finds itself in, but
+        unlike the first image which looks good on any screen size, this
+        doesn't. On smaller screens, parts of the lady get cut off and she then
+        becomes too large for the user to view.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="./img/landscape-view.jpg"
+        alt="landscape view of a woman standing in front of a multi-colored wall"
+      />
+      <figcaption
+        >With the same image used above, we have removed the fixed height and
+        object fit but left the width the same and its orientation is still
+        landscaped. On different screen sizes, it maintains the same aspect
+        ratio, adjusting the height of the image to accommodate its relative
+        width so we can see every major and minor detail in it. We can easily
+        view the lady in the image on larger screens but not on smaller
+        screens.</figcaption
+      >
+    </figure>
+    <figure>
+      <img
+        src="./img/portrait-view.jpg"
+        alt="portrait view of a woman standing in front of a multi-colored wall"
+      />
+      <figcaption
+        >If we switch the image from the landscaped orientation to a version of
+        it in portrait orientation and use it on smaller screens, we can then
+        easily see the details of the lady once again. But when using this same
+        image for larger screens, it becomes too large for the user to view the
+        image or lady at first glance.</figcaption
+      >
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@nixcreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Tyler Nix</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </figure>
+  </body>
+</html>

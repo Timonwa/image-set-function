@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images with the image-set() CSS function</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+        text-align: center;
+      }
+      figure {
+        max-width: 1440px;
+        margin-bottom: 40px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .car {
+        width: 100%;
+        height: 500px;
+        background-image: url("./img/2400by1592.jpg");
+        background-image: -webkit-image-set(
+          url("./img/640by425.jpg") 1x,
+          url("./img/1200by796.jpg") 2x,
+          url("./img/2400by1592.jpg") 3x
+        );
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      @media screen and (max-width: 800px) {
+        .car {
+          margin: auto;
+          width: 500px;
+          height: 300px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .car {
+          margin: auto;
+          width: 300px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Responsive images with the image-set() CSS function</h1>
+    <h2>Responsive Images</h2>
+
+    <h3>Resoluton Switching</h3>
+    <figure>
+      <p class="car"></p>
+      <figcaption></figcaption>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Markus Spiske</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/bettle-car, Size 2.4mb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </figure>
+
+    <h3>Art Direction</h3>
+    <figure>
+      <picture>
+        <source media="(max-width: 600px)" srcset="./img/portrait-view.jpg" />
+        <source
+          media="(max-width: 960px)"
+          srcset="./img/landscape-view-mid.jpg"
+        />
+        <source media="(min-width: 961px)" srcset="./img/landscape-view.jpg" />
+        <img
+          src="./img/landscape-view.jpg"
+          alt="landscape view of a woman standing in front of a multi-colored wall"
+        />
+      </picture>
+      <figcaption
+        >On large screens, the browser displays the normal image in a landscaped
+        orientation. On mid screens, the image is cropped a little on the sides,
+        while on small screens the image is cropped into a portrait
+        orientation.</figcaption
+      >
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@nixcreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Tyler Nix</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </figure>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images with the image-set() CSS function</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+        text-align: center;
+      }
+      figure {
+        max-width: 1440px;
+        margin-bottom: 40px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Responsive images with the image-set() CSS function</h1>
+    <h2>Resolution Switching</h2>
+    <p
+      >Here we see the same image with five different pixel resolutions and file
+      size. Adjust the width of the screen to see how the resolution of each
+      image displays on different screen sizes.
+    </p>
+    <p
+      >If you have two or more screens with the same width but different screen
+      resolution, you can view this example on each of them simultaneously and
+      compare the images side by side.</p
+    >
+    <figure>
+      <img
+        src="./img/3500by2321.jpg"
+        alt="3500x2321px image of a white beetle car, Size 2.4mb"
+      />
+      <figcaption>3500x2321px image. Size 2.4mb.</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="./img/2400by1592.jpg"
+        alt="2400x1592px image of a white beetle car, Size 1.19mb"
+      />
+      <figcaption>2400x1592px image. Size 1.19mb.</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="./img/1200by796.jpg"
+        alt="1200x796px image of a white beetle car, Size 323.51kb"
+      />
+      <figcaption>1200x796px image. Size 323.51kb.</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="./img/640by425.jpg"
+        alt="640x425px image of a white beetle car, Size 60.67kb"
+      />
+      <figcaption>640x425px image. Size 60.67kb.</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="./img/300by199.jpg"
+        alt="640x425px image of a white beetle car, Size 23kb"
+      />
+      <figcaption>300by199px image. Size 23kb.</figcaption>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Markus Spiske</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/bettle-car, Size 2.4mb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </figure>
+  </body>
+</html>
