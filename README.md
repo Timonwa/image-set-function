@@ -3,6 +3,7 @@
 This is the code example for my article on [Creating responsive images with image-set](https://uploadcare.com/blog/image-set-for-responsive-images/) for [Uploadcare](https://uploadcare.com/).
 Here is the [live demo](https://image-set-by-timonwa.netlify.app).
 
+Visit my blog, [Timonwa's Notes](https://blog.timonwa.com), for awesome technical content like articles, code snippets, tech goodies, community projects, and more.
 ## Summary
 
 `image-set` is a CSS function that allows you to make an image responsive, showing variations of the same picture for different screen resolutions when needed. 
